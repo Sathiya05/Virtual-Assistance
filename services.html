@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VirtuAssist | Services & Investment</title>
+
+  <script src="tailwind.js"></script>
+            <link rel="icon" href="images\logo.jpeg">
+
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            lavender: '#A78BFA',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .transition-theme {
+      transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease;
+    }
+    /* Ambient glow for the hero */
+    .hero-glow {
+      position: absolute;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(167, 139, 250, 0.15) 0%, rgba(167, 139, 250, 0) 70%);
+      top: -100px;
+      right: -100px;
+      z-index: 0;
+      pointer-events: none;
+    }
+    .dark .hero-glow {
+      background: radial-gradient(circle, rgba(167, 139, 250, 0.2) 0%, rgba(167, 139, 250, 0) 70%);
+    }
+  </style>
+</head>
+
+<body class="bg-white dark:bg-black text-black dark:text-white font-sans transition-theme overflow-x-hidden">
+
+  <div id="navbar"></div>
+
+  <section class="relative pt-32 pb-16 lg:pt-32 lg:pb-16 flex items-center justify-center overflow-hidden transition-theme min-h-[90vh]">
+    
+    <!-- Premium Colorful Gradient Background -->
+    <div class="absolute inset-0 z-0 overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-br from-indigo-50 via-white to-fuchsia-50 dark:from-gray-900 dark:via-black dark:to-indigo-950"></div>
+      <div class="absolute -top-[20%] -right-[10%] w-[70%] h-[70%] rounded-full bg-lavender/30 dark:bg-lavender/20 blur-[120px] mix-blend-multiply dark:mix-blend-screen pointer-events-none"></div>
+      <div class="absolute -bottom-[20%] -left-[10%] w-[60%] h-[60%] rounded-full bg-blue-300/20 dark:bg-blue-900/30 blur-[120px] mix-blend-multiply dark:mix-blend-screen pointer-events-none"></div>
+      <img src="images/img1.avif" alt="Abstract Background" class="absolute inset-0 w-full h-full object-cover opacity-40 dark:opacity-20 mix-blend-overlay">
+    </div>
+    
+    <div class="max-w-[1200px] mx-auto px-6 w-full relative z-10 text-center backdrop-blur-sm bg-white/30 dark:bg-black/30 border border-white/20 dark:border-gray-800/50 p-12 md:p-20 rounded-[3rem] shadow-2xl">
+      
+      <!-- Small Aesthetic Image -->
+      <div class="w-24 h-24 mx-auto mb-8 rounded-full overflow-hidden border-4 border-white/50 dark:border-gray-800/50 shadow-lg flex items-center justify-center">
+        <img src="images/our_story_hero.png" alt="Executive Detail" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+      </div>
+
+      <p class="text-xs font-bold tracking-[0.2em] uppercase text-lavender mb-6">Our Services</p>
+      <h1 class="text-4xl md:text-6xl font-serif font-bold leading-tight mb-8">
+        Precision Support. <br>
+        <span class="italic font-light text-lavender dark:text-lavender">Absolute Leverage.</span>
+      </h1>
+      <p class="text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto font-light leading-relaxed">
+        We do not offer generic task execution. We provide bespoke administrative architecture designed to reclaim your time and accelerate your vision.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-24 border-t border-gray-100 dark:border-gray-900 transition-theme">
+    <div class="max-w-[1200px] mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        
+        <div class="relative w-full h-[400px] lg:h-[600px] rounded-[2rem] overflow-hidden shadow-2xl group">
+          <div class="absolute inset-0 bg-lavender/20 group-hover:opacity-0 transition-opacity duration-500 z-10 mix-blend-multiply"></div>
+          <img src="images\Executive Operations.avif" alt="Executive Operations" class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105">
+        </div>
+
+        <div>
+          <span class="text-lavender font-serif font-bold text-5xl mb-4 block opacity-50">01</span>
+          <h2 class="text-3xl md:text-4xl font-serif font-bold mb-6">Executive Operations</h2>
+          <p class="text-gray-600 dark:text-gray-400 font-light text-lg mb-8 leading-relaxed">
+            The backbone of your business. We handle the operational friction so you can focus entirely on high-leverage growth and strategy.
+          </p>
+          
+          <div class="space-y-6">
+            <div class="p-6 rounded-2xl bg-gray-50 dark:bg-gray-900 border border-gray-100 dark:border-gray-800 hover:border-lavender transition-all">
+              <h4 class="font-bold mb-2 flex items-center gap-3"><i class="fa-solid fa-folder-tree text-lavender"></i> Information Architecture</h4>
+              <p class="text-sm text-gray-500 font-light">Organizing workspaces (Drive/Notion), creating intuitive filing systems, and ensuring you can find any document in under 10 seconds.</p>
+            </div>
+            
+            <div class="p-6 rounded-2xl bg-gray-50 dark:bg-gray-900 border border-gray-100 dark:border-gray-800 hover:border-lavender transition-all">
+              <h4 class="font-bold mb-2 flex items-center gap-3"><i class="fa-solid fa-users text-lavender"></i> CRM & Client Management</h4>
+              <p class="text-sm text-gray-500 font-light">Updating records, drafting standard client communications, and ensuring no lead or relationship slips through the cracks.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-gray-50 dark:bg-gray-900/50 transition-theme border-y border-gray-100 dark:border-gray-900">
+    <div class="max-w-[1200px] mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        
+        <div class="order-2 lg:order-1">
+          <span class="text-lavender font-serif font-bold text-5xl mb-4 block opacity-50">02</span>
+          <h2 class="text-3xl md:text-4xl font-serif font-bold mb-6">Inbox & Calendar Gatekeeping</h2>
+          <p class="text-gray-600 dark:text-gray-400 font-light text-lg mb-8 leading-relaxed">
+            Protecting your attention at all costs. You only see the communications and meetings that require your unique genius.
+          </p>
+          
+          <div class="space-y-6">
+            <div class="p-6 rounded-2xl bg-white dark:bg-black border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-lavender/20 transition-all">
+              <h4 class="font-bold mb-2 flex items-center gap-3"><i class="fa-solid fa-envelope-open-text text-lavender"></i> Inbox Alchemy</h4>
+              <p class="text-sm text-gray-500 font-light">We process your inbox twice daily. Junk is deleted, standard inquiries are answered, and items requiring your input are flagged in a daily briefing.</p>
+            </div>
+            
+            <div class="p-6 rounded-2xl bg-white dark:bg-black border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-lavender/20 transition-all">
+              <h4 class="font-bold mb-2 flex items-center gap-3"><i class="fa-solid fa-calendar-day text-lavender"></i> Strategic Scheduling</h4>
+              <p class="text-sm text-gray-500 font-light">No more scheduling ping-pong. We handle all logistics, enforce your deep-work focus blocks, and build buffer times into your day.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="order-1 lg:order-2 relative w-full h-[400px] lg:h-[600px] rounded-[2rem] overflow-hidden shadow-2xl group">
+          <img src="images\img11.avif" alt="Gatekeeping" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+          <div class="absolute bottom-8 left-8 right-8">
+            <div class="bg-white/90 dark:bg-black/90 backdrop-blur p-4 rounded-xl border border-white/20 flex items-center gap-4 shadow-xl">
+              <div class="w-10 h-10 rounded-full bg-green-100 dark:bg-green-900/50 flex items-center justify-center text-green-600 dark:text-green-400"><i class="fa-solid fa-check-double"></i></div>
+              <div>
+                <p class="text-xs font-bold uppercase tracking-wider">Status Update</p>
+                <p class="text-sm font-serif">Inbox Zero Achieved.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="py-32 bg-black text-white relative transition-theme overflow-hidden">
+    <div class="absolute inset-0 opacity-30" style="background-image: radial-gradient(#A78BFA 1px, transparent 1px); background-size: 50px 50px;"></div>
+    
+    <div class="max-w-[1000px] mx-auto px-6 relative z-10 text-center">
+      <span class="text-lavender font-serif font-bold text-5xl mb-6 block">03</span>
+      <h2 class="text-4xl md:text-5xl font-serif font-bold mb-6">Travel & Lifestyle Concierge</h2>
+      <p class="text-gray-400 font-light text-lg mb-12 max-w-2xl mx-auto leading-relaxed">
+        Because an executive's personal life shouldn't suffer for their professional success. White-glove service that extends beyond the boardroom.
+      </p>
+
+      <div class="grid md:grid-cols-3 gap-6 text-start">
+        <div class="p-8 rounded-2xl bg-gray-900 border border-gray-800 hover:border-lavender/50 transition-all">
+          <i class="fa-solid fa-plane-departure text-2xl text-lavender mb-4"></i>
+          <h4 class="font-bold mb-2">Complex Itineraries</h4>
+          <p class="text-sm text-gray-500 font-light">End-to-end booking of flights, luxury place, and ground transport seamlessly synced to your calendar and inbox.</p>
+        </div>
+        <div class="p-8 rounded-2xl bg-gray-900 border border-gray-800 hover:border-lavender/50 transition-all">
+          <i class="fa-solid fa-gift text-2xl text-lavender mb-4"></i>
+          <h4 class="font-bold mb-2">Be-Procurement</h4>
+          <p class="text-sm text-gray-500 font-light">Sourcing client gifts, anniversary presents, or hard-to-find items. We handle research, purchasing, and logistics.</p>
+        </div>
+        <div class="p-8 rounded-2xl bg-gray-900 border border-gray-800 hover:border-lavender/50 transition-all">
+          <i class="fa-solid fa-house-chimney text-2xl text-lavender mb-4"></i>
+          <h4 class="font-bold mb-2">Household Liaison</h4>
+          <p class="text-sm text-gray-500 font-light">Coordinating with personal trainers, home maintenance, or booking personal appointments to protect your weekends.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+<section class="py-24 border-b border-gray-100 dark:border-gray-900 transition-theme bg-white dark:bg-black">
+    <div class="max-w-[1200px] mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        
+        <div>
+          <p class="text-xs font-bold tracking-[0.2em] uppercase text-lavender mb-4">Time Arbitrage</p>
+          <h2 class="text-3xl md:text-4xl font-serif font-bold mb-6">The true cost of your inbox.</h2>
+          <p class="text-gray-600 dark:text-gray-400 font-light text-lg mb-8 leading-relaxed">
+            If your effective hourly rate as a founder or executive is $500/hour, spending just two hours a day on scheduling and email costs your business $5,000 a week. 
+          </p>
+          <p class="text-gray-600 dark:text-gray-400 font-light text-lg mb-8 leading-relaxed">
+            VirtuAssist is not an expense. It is a strategic vehicle for time arbitrage—allowing you to buy back your lowest-leverage hours so you can reinvest them into revenue-generating activities.
+          </p>
+          <div class="inline-flex items-center gap-4 px-6 py-4 rounded-2xl bg-lavender/10 border border-lavender/20">
+            <i class="fa-solid fa-calculator text-lavender text-xl"></i>
+            <span class="font-serif font-bold text-lg text-black dark:text-white">Average Client ROI: <span class="text-lavender">6.5x</span></span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div class="p-8 rounded-3xl bg-gray-50 dark:bg-gray-900 border border-gray-100 dark:border-gray-800 shadow-sm relative overflow-hidden group">
+            <div class="absolute top-0 end-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity"><i class="fa-solid fa-arrow-trend-down text-6xl"></i></div>
+            <p class="text-sm font-bold text-gray-500 uppercase tracking-widest mb-2">Before VirtuAssist</p>
+            <p class="text-4xl font-serif font-bold mb-4 text-black dark:text-white">35%</p>
+            <p class="text-sm text-gray-600 dark:text-gray-400 font-light">Of the average executive's week is consumed by repetitive, non-strategic tasks.</p>
+          </div>
+          
+          <div class="p-8 rounded-3xl bg-black dark:bg-white text-white dark:text-black shadow-xl shadow-lavender/10 relative overflow-hidden group sm:translate-y-8">
+            <div class="absolute top-0 end-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity"><i class="fa-solid fa-arrow-trend-up text-6xl"></i></div>
+            <p class="text-sm font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest mb-2">After VirtuAssist</p>
+            <p class="text-4xl font-serif font-bold mb-4 text-lavender">90%</p>
+            <p class="text-sm text-gray-300 dark:text-gray-600 font-light">Of working hours redirected exclusively to leadership, strategy, and deep work.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section class="py-24 bg-gray-50 dark:bg-gray-900/30 transition-theme border-y border-gray-100 dark:border-gray-900">
+    <div class="max-w-[1000px] mx-auto px-6">
+      
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4">Specialties Support</h2>
+        <p class="text-gray-600 dark:text-gray-400 font-light text-lg">Specialized support projects available exclusively to active retainer clients.</p>
+      </div>
+
+      <div class="flex flex-col">
+        <div class="group border-b border-gray-200 dark:border-gray-800 py-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 relative transition-colors hover:bg-white dark:hover:bg-gray-900 px-6 -mx-6 rounded-2xl">
+          <div class="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-0 bg-lavender group-hover:h-3/4 transition-all duration-300 rounded-e-lg"></div>
+          
+          <div class="flex flex-col md:flex-row items-start md:items-center gap-6 flex-1">
+            <div class="w-20 h-20 md:w-24 md:h-24 shrink-0 rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-800 shadow-sm">
+              <img src="images\img8.avif" alt="Board Meeting Curation" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+            </div>
+            <div>
+              <h4 class="text-xl font-bold font-serif mb-2 text-black dark:text-white group-hover:text-lavender transition-colors">Board Meeting Curation</h4>
+              <p class="text-gray-500 dark:text-gray-400 font-light text-sm max-w-xl">Complete orchestration of quarterly board meetings. Venue sourcing, catering logistics, presentation deck formatting, and minute-taking.</p>
+            </div>
+          </div>
+          
+          <div class="shrink-0 mt-4 md:mt-0">
+            <span class="text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full border border-gray-200 dark:border-gray-700 text-gray-500">Project Based</span>
+          </div>
+        </div>
+
+        <div class="group border-b border-gray-200 dark:border-gray-800 py-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 relative transition-colors hover:bg-white dark:hover:bg-gray-900 px-6 -mx-6 rounded-2xl">
+          <div class="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-0 bg-lavender group-hover:h-3/4 transition-all duration-300 rounded-e-lg"></div>
+          
+          <div class="flex flex-col md:flex-row items-start md:items-center gap-6 flex-1">
+            <div class="w-20 h-20 md:w-24 md:h-24 shrink-0 rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-800 shadow-sm">
+              <img src="images\img9.avif" alt="Private Event Production" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+            </div>
+            <div>
+              <h4 class="text-xl font-bold font-serif mb-2 text-black dark:text-white group-hover:text-lavender transition-colors">Private Event Production</h4>
+              <p class="text-gray-500 dark:text-gray-400 font-light text-sm max-w-xl">End-to-end planning for executive retreats, investor dinners, or VIP client entertainment experiences.</p>
+            </div>
+          </div>
+          
+          <div class="shrink-0 mt-4 md:mt-0">
+            <span class="text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full border border-gray-200 dark:border-gray-700 text-gray-500">Project Based</span>
+          </div>
+        </div>
+
+        <div class="group border-b border-gray-200 dark:border-gray-800 py-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 relative transition-colors hover:bg-white dark:hover:bg-gray-900 px-6 -mx-6 rounded-2xl">
+          <div class="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-0 bg-lavender group-hover:h-3/4 transition-all duration-300 rounded-e-lg"></div>
+          
+          <div class="flex flex-col md:flex-row items-start md:items-center gap-6 flex-1">
+            <div class="w-20 h-20 md:w-24 md:h-24 shrink-0 rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-800 shadow-sm">
+              <img src="images\img10.avif" alt="Podcast & Media Tour Management" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+            </div>
+            <div>
+              <h4 class="text-xl font-bold font-serif mb-2 text-black dark:text-white group-hover:text-lavender transition-colors">Podcast & Media Tour Management</h4>
+              <p class="text-gray-500 dark:text-gray-400 font-light text-sm max-w-xl">Pitching your expertise to top-tier podcasts, coordinating recording tech checks, and managing PR interview schedules.</p>
+            </div>
+          </div>
+          
+          <div class="shrink-0 mt-4 md:mt-0">
+            <span class="text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full border border-gray-200 dark:border-gray-700 text-gray-500">Project Based</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="py-24 transition-theme bg-white dark:bg-black">
+    <div class="max-w-[1200px] mx-auto px-6">
+      <div class="text-center mb-20">
+        <h2 class="text-4xl font-serif font-bold mb-4">The Integration Sequence</h2>
+        <p class="text-gray-600 dark:text-gray-400 font-light">Seamless handover. We take the reins in under 72 hours.</p>
+      </div>
+
+      <div class="grid md:grid-cols-4 gap-8 relative">
+        <div class="hidden md:block absolute top-6 start-[10%] end-[10%] h-[2px] bg-gray-100 dark:bg-gray-900 z-0"></div>
+
+        <div class="relative z-10">
+          <div class="w-12 h-12 mx-auto rounded-full bg-lavender text-white flex items-center justify-center font-bold text-lg mb-6 shadow-lg shadow-lavender/30 ring-4 ring-white dark:ring-black">1</div>
+          <div class="text-center">
+            <h4 class="font-bold mb-2">Discovery Dive</h4>
+            <p class="text-sm text-gray-500 font-light">A 60-minute intensive call mapping out your tech stack, bottlenecks, and boundaries.</p>
+          </div>
+        </div>
+
+        <div class="relative z-10">
+          <div class="w-12 h-12 mx-auto rounded-full bg-gray-100 dark:bg-gray-900 text-black dark:text-white flex items-center justify-center font-bold text-lg mb-6 ring-4 ring-white dark:ring-black">2</div>
+          <div class="text-center">
+            <h4 class="font-bold mb-2">Secure Handover</h4>
+            <p class="text-sm text-gray-500 font-light">We establish our 1Password vault. You grant delegated access to calendar securely.</p>
+          </div>
+        </div>
+
+        <div class="relative z-10">
+          <div class="w-12 h-12 mx-auto rounded-full bg-gray-100 dark:bg-gray-900 text-black dark:text-white flex items-center justify-center font-bold text-lg mb-6 ring-4 ring-white dark:ring-black">3</div>
+          <div class="text-center">
+            <h4 class="font-bold mb-2">Shadow Execution</h4>
+            <p class="text-sm text-gray-500 font-light">The first 48 hours. We draft communications for approval to perfectly nail your voice.</p>
+          </div>
+        </div>
+
+        <div class="relative z-10">
+          <div class="w-12 h-12 mx-auto rounded-full bg-black dark:bg-white text-white dark:text-black flex items-center justify-center font-bold text-lg mb-6 ring-4 ring-white dark:ring-black border border-gray-200 dark:border-gray-800">4</div>
+          <div class="text-center">
+            <h4 class="font-bold mb-2">Total Autonomy</h4>
+            <p class="text-sm text-gray-500 font-light">Full operational flow. You now have an extra 15 hours a week to focus on high activities.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 px-6 mb-10">
+    <div class="max-w-[1200px] mx-auto rounded-[2.5rem] bg-black text-white text-center py-20 px-6 relative overflow-hidden shadow-2xl">
+      <div class="absolute inset-0 bg-gradient-to-br from-lavender/40 to-transparent opacity-40 mix-blend-overlay pointer-events-none"></div>
+      
+      <div class="relative z-10 max-w-2xl mx-auto">
+        <h2 class="text-4xl md:text-5xl font-serif font-bold mb-6">Your capacity is capped. <br>Our support is not.</h2>
+        <p class="text-gray-300 font-light text-lg mb-10">Schedule a discovery call today to identify your operational bottlenecks and design your custom support architecture.</p>
+        <a href="contact.html" class="inline-flex px-10 py-5 rounded-full bg-lavender text-white font-bold hover:bg-white hover:text-black transition-all duration-300 shadow-lg shadow-lavender/20 hover:-translate-y-1">
+          Initiate Partnership
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer"></div>
+
+  <script src="navbar.js"></script>
+  <script src="footer.js"></script>
+
+</body>
+</html>

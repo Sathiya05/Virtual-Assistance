@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VirtuAssist | Premium Executive Virtual Assistant</title>
+
+  <script src="tailwind.js"></script>
+            <link rel="icon" href="images\logo.jpeg">
+
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            lavender: '#A78BFA',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .transition-theme {
+      transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease;
+    }
+    /* Elegant gradient mesh background */
+    .bg-mesh-light {
+      background-image: 
+        radial-gradient(at 10% 0%, rgba(167, 139, 250, 0.1) 0px, transparent 50%),
+        radial-gradient(at 90% 10%, rgba(167, 139, 250, 0.05) 0px, transparent 50%),
+        radial-gradient(at 50% 100%, rgba(167, 139, 250, 0.1) 0px, transparent 50%);
+    }
+    .dark .bg-mesh-dark {
+      background-image: 
+        radial-gradient(at 10% 0%, rgba(167, 139, 250, 0.15) 0px, transparent 50%),
+        radial-gradient(at 90% 10%, rgba(167, 139, 250, 0.08) 0px, transparent 50%),
+        radial-gradient(at 50% 100%, rgba(167, 139, 250, 0.15) 0px, transparent 50%);
+    }
+  </style>
+</head>
+
+<body class="bg-white dark:bg-black text-black dark:text-white font-sans transition-theme overflow-x-hidden">
+
+  <div id="navbar"></div>
+
+  <section class="relative min-h-[100dvh] pt-32 pb-20 flex items-center transition-theme overflow-hidden">
+    <!-- Background Image & Gradient Overlay -->
+    <div class="absolute inset-0 z-0">
+      <img src="images\img1.avif" alt="Abstract Background" class="w-full h-full object-cover opacity-40 dark:opacity-30">
+      <div class="absolute inset-0 bg-gradient-to-br from-white/95 via-white/70 to-white/95 dark:from-black/95 dark:via-black/70 dark:to-black/95 backdrop-blur-[2px]"></div>
+      <div class="absolute inset-0 bg-mesh-light dark:bg-mesh-dark opacity-100"></div>
+    </div>
+
+    <div class="max-w-[1200px] mx-auto px-6 w-full relative z-10">
+      
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="text-center lg:text-start rtl:lg:text-end">
+          <div class="inline-flex items-center gap-3 px-4 py-2 rounded-full border border-lavender/30 bg-lavender/5 mb-8">
+            <span class="w-2 h-2 rounded-full bg-lavender animate-pulse"></span>
+            <span class="text-xs font-semibold tracking-widest uppercase text-gray-600 dark:text-gray-300">Executive Capacity Unlocked</span>
+          </div>
+          
+          <h1 class="text-5xl lg:text-6xl xl:text-7xl font-serif font-bold leading-tight mb-6">
+            Delegate the chaos. <br>
+            <span class="italic text-lavender font-light">Command your time.</span>
+          </h1>
+          
+          <p class="text-lg text-gray-600 dark:text-gray-400 mb-10 max-w-lg mx-auto lg:mx-0 font-light leading-relaxed">
+            Premium administrative support and executive assistance for founders, visionaries, and leaders who need their hours back.
+          </p>
+          
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+            <a href="contact.html" class="w-full sm:w-auto px-8 py-4 rounded-full bg-black dark:bg-white text-white dark:text-black font-semibold hover:bg-lavender dark:hover:bg-lavender dark:hover:text-white transition-colors shadow-lg hover:shadow-lavender/30">
+              Book a Consultation
+            </a>
+            <a href="services.html" class="w-full sm:w-auto px-8 py-4 rounded-full border-2 border-gray-200 dark:border-gray-800 font-semibold hover:border-lavender hover:text-lavender transition-colors">
+              View Services
+            </a>
+          </div>
+        </div>
+
+        <div class="relative hidden lg:block h-[500px] w-full">
+          <img src="images\img2.avif" alt="Workspace" class="absolute top-1/2 start-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 object-cover rounded-full shadow-2xl border-8 border-white dark:border-gray-900 transition-transform duration-700 hover:scale-105">
+          
+          <div class="absolute top-10 end-10 w-64 bg-white/90 dark:bg-black/90 backdrop-blur-md p-5 rounded-2xl border border-gray-100 dark:border-gray-800 shadow-2xl animate-[bounce_4s_infinite]">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-8 h-8 rounded-full bg-lavender/20 flex items-center justify-center text-lavender"><i class="fa-regular fa-calendar-check text-sm"></i></div>
+              <p class="text-sm font-semibold">Calendar Synced</p>
+            </div>
+            <div class="h-2 w-full bg-gray-100 dark:bg-gray-800 rounded-full overflow-hidden">
+              <div class="h-full bg-lavender w-full"></div>
+            </div>
+          </div>
+
+          <div class="absolute bottom-20 start-0 w-72 bg-white/90 dark:bg-black/90 backdrop-blur-md p-5 rounded-2xl border border-gray-100 dark:border-gray-800 shadow-2xl animate-[bounce_5s_infinite_reverse]">
+            <div class="flex items-center justify-between mb-2">
+              <p class="text-xs text-gray-500 font-medium">Inbox Status</p>
+              <span class="text-xs bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400 px-2 py-1 rounded-md font-bold">Zero</span>
+            </div>
+            <p class="font-serif text-lg font-bold">All emails sorted & drafted.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="services" class="py-24 transition-theme relative">
+    <div class="max-w-[1200px] mx-auto px-6">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="text-4xl md:text-5xl font-serif font-bold mb-4">Focus on your zone of genius.</h2>
+        <p class="text-gray-600 dark:text-gray-400 font-light text-lg">I handle the operational drag so you can focus on scaling your business, leading your team, and actually enjoying your weekend.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[250px]">
+        
+        <div class="md:col-span-2 md:row-span-2 group relative p-8 rounded-3xl bg-gray-50 dark:bg-gray-900 border border-gray-100 dark:border-gray-800 overflow-hidden hover:border-lavender dark:hover:border-lavender transition-all flex flex-col md:flex-row gap-8 items-stretch">
+          <div class="absolute top-0 end-0 w-64 h-64 bg-lavender/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 group-hover:bg-lavender/20 transition-colors pointer-events-none"></div>
+          <div class="flex-1 relative z-10 flex flex-col justify-between">
+            <div>
+              <div class="w-14 h-14 rounded-2xl bg-white dark:bg-black flex items-center justify-center shadow-sm text-lavender text-2xl mb-8"><i class="fa-solid fa-briefcase"></i></div>
+              <h3 class="text-2xl font-serif font-bold mb-4">Comprehensive Admin Support</h3>
+              <p class="text-gray-600 dark:text-gray-400 font-light mb-8 max-w-md">From document preparation and CRM management to drafting proposals and organizing digital workspaces. Your complete back-office engine.</p>
+            </div>
+            <a href="services.html" class="inline-flex items-center gap-2 text-sm font-semibold hover:text-lavender transition-colors w-fit">Learn more <i class="fa-solid fa-arrow-right-long transition-transform group-hover:translate-x-1"></i></a>
+          </div>
+          <div class="w-full h-48 md:h-auto md:flex-1 relative z-10 mt-6 md:mt-0">
+            <img src="images\admin_support.png" alt="Admin Support" class="w-full h-full object-cover rounded-2xl shadow-lg border border-gray-200 dark:border-gray-800 group-hover:scale-[1.02] transition-transform duration-500">
+          </div>
+        </div>
+
+        <div class="group relative p-8 rounded-3xl bg-gray-50 dark:bg-gray-900 border border-gray-100 dark:border-gray-800 hover:border-lavender transition-all flex flex-col justify-between">
+          <div class="w-12 h-12 rounded-full bg-lavender/10 flex items-center justify-center text-lavender text-xl"><i class="fa-regular fa-envelope-open"></i></div>
+          <div>
+            <h3 class="text-xl font-serif font-bold mb-2">Inbox Alchemy</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400 font-light">Categorization, drafting replies, and achieving elusive Inbox Zero.</p>
+          </div>
+        </div>
+
+        <div class="group relative p-8 rounded-3xl bg-black text-white border border-gray-800 hover:border-lavender transition-all flex flex-col justify-between">
+          <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-lavender text-xl"><i class="fa-regular fa-calendar"></i></div>
+          <div>
+            <h3 class="text-xl font-serif font-bold mb-2">Gatekeeping</h3>
+            <p class="text-sm text-gray-400 font-light">Calendar tetris, meeting scheduling, and protecting your deep work time.</p>
+          </div>
+        </div>
+
+        <div class="md:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-center p-6 md:p-8 rounded-3xl bg-lavender/10 border border-lavender/20 text-center md:text-start">
+          <div class="flex flex-col items-center md:items-start">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-white dark:bg-black border border-lavender/30 text-xs font-semibold mb-4"><i class="fa-solid fa-plane-departure text-lavender"></i> Travel & Lifestyle</div>
+            <h3 class="text-2xl md:text-3xl font-serif font-bold mb-2">Beyond the Office</h3>
+            <p class="text-gray-600 dark:text-gray-400 font-light text-sm md:text-base">Flight bookings, itinerary planning, dinner reservations, and personal errands so your personal life doesn't fall behind your professional one.</p>
+          </div>
+          <div class="flex justify-center md:justify-end w-full mt-4 md:mt-0">
+            <a href="services.html" class="w-full md:w-auto px-6 py-3 rounded-full bg-black dark:bg-white text-white dark:text-black font-semibold text-sm hover:scale-105 transition-transform text-center shadow-md">See all services</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-gray-50 dark:bg-gray-900 transition-theme">
+    <div class="max-w-[1200px] mx-auto px-6">
+      
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-5xl font-serif font-bold mb-4">Onboarding in 3 simple steps</h2>
+        <p class="text-gray-600 dark:text-gray-400 font-light">A frictionless process to get you support immediately.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-10 relative">
+        <div class="hidden md:block absolute top-8 start-[15%] end-[15%] h-[1px] border-t-2 border-dashed border-gray-300 dark:border-gray-700 z-0"></div>
+
+        <div class="relative z-10 text-center">
+          <div class="w-16 h-16 mx-auto rounded-full bg-white dark:bg-black border-4 border-gray-50 dark:border-gray-900 shadow-md flex items-center justify-center text-xl font-bold font-serif text-lavender mb-6">1</div>
+          <h4 class="text-xl font-bold mb-3">Discovery Call</h4>
+          <p class="text-gray-600 dark:text-gray-400 font-light text-sm">We map out your current bottlenecks, tools, and determine exactly what tasks to offload first.</p>
+        </div>
+
+        <div class="relative z-10 text-center">
+          <div class="w-16 h-16 mx-auto rounded-full bg-lavender text-white border-4 border-gray-50 dark:border-gray-900 shadow-lg flex items-center justify-center text-xl font-bold font-serif mb-6">2</div>
+          <h4 class="text-xl font-bold mb-3">System Integration</h4>
+          <p class="text-gray-600 dark:text-gray-400 font-light text-sm">Secure handover of passwords, inbox access (via Password), and communication preferences.</p>
+        </div>
+
+        <div class="relative z-10 text-center">
+          <div class="w-16 h-16 mx-auto rounded-full bg-black dark:bg-white text-white dark:text-black border-4 border-gray-50 dark:border-gray-900 shadow-md flex items-center justify-center text-xl font-bold font-serif mb-6">3</div>
+          <h4 class="text-xl font-bold mb-3">Daily Execution</h4>
+          <p class="text-gray-600 dark:text-gray-400 font-light text-sm">Wake up to a clean inbox, an organized calendar, daily brief of what needs your actual attention.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="py-24 transition-theme overflow-hidden">
+    <div class="max-w-[1200px] mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="order-2 lg:order-1 relative">
+          <img src="images\relaxed_executive.png" alt="Relaxed Executive" class="relative z-10 rounded-[2rem] w-full h-[500px] object-cover shadow-2xl">
+          
+          <div class="absolute -bottom-10 -end-5 bg-white dark:bg-black p-6 rounded-2xl shadow-xl border border-gray-100 dark:border-gray-800 z-20 hidden md:block animate-[bounce_6s_infinite]">
+            <p class="text-sm text-gray-500 font-medium mb-1">Average Time Saved</p>
+            <p class="text-3xl font-serif font-bold text-lavender">15+ hrs / wk</p>
+          </div>
+        </div>
+        
+        <div class="order-1 lg:order-2">
+          <h2 class="text-4xl md:text-5xl font-serif font-bold mb-6">Quantifiable Time ROI.</h2>
+          <p class="text-gray-600 dark:text-gray-400 font-light text-lg mb-8 leading-relaxed">
+            Our clients don't just feel less stressed; they see measurable changes in their bandwidth. By offloading the operational drag, you unlock the mental space required for high-level strategic thinking.
+          </p>
+          
+          <div class="flex flex-col gap-6">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-full bg-lavender/10 flex items-center justify-center text-lavender shrink-0 mt-1"><i class="fa-solid fa-check"></i></div>
+              <div>
+                <h4 class="text-lg font-bold mb-1">100% Inbox Zero Maintained</h4>
+                <p class="text-sm text-gray-600 dark:text-gray-400 font-light">We process, categorize, and draft responses so you only see what matters.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-full bg-lavender/10 flex items-center justify-center text-lavender shrink-0 mt-1"><i class="fa-solid fa-check"></i></div>
+              <div>
+                <h4 class="text-lg font-bold mb-1">Uninterrupted Deep Work</h4>
+                <p class="text-sm text-gray-600 dark:text-gray-400 font-light">By gatekeeping your calendar, we ensure your focus blocks remain sacred.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-full bg-lavender/10 flex items-center justify-center text-lavender shrink-0 mt-1"><i class="fa-solid fa-check"></i></div>
+              <div>
+                <h4 class="text-lg font-bold mb-1">Proactive Problem Solving</h4>
+                <p class="text-sm text-gray-600 dark:text-gray-400 font-light">We anticipate needs before they become emergencies, keeping you one step ahead.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 transition-theme">
+    <div class="max-w-[1200px] mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        
+        <div class="pe-0 md:pe-10 border-b md:border-b-0 md:border-e border-gray-200 dark:border-gray-800 pb-10 md:pb-0">
+          <div class="text-lavender text-4xl mb-6"><i class="fa-solid fa-quote-left"></i></div>
+          <h3 class="text-2xl md:text-3xl font-serif font-bold leading-relaxed mb-6">"Hiring VirtuAssist was the highest ROI decision I made this year. I bought back 15 hours a week and finally took a real vacation."</h3>
+          <div>
+            <p class="font-bold">Sarah Jenkins</p>
+            <p class="text-sm text-gray-500 font-light">Founder, TechFlow Agency</p>
+          </div>
+        </div>
+
+        <div class="ps-0 md:ps-10">
+          <div class="text-lavender text-4xl mb-6"><i class="fa-solid fa-quote-left"></i></div>
+          <h3 class="text-2xl md:text-3xl font-serif font-bold leading-relaxed mb-6">"My inbox was a source of massive anxiety. Now, I only see the 5 emails a day that actually require my brainpower."</h3>
+          <div>
+            <p class="font-bold">Marcus Thorne</p>
+            <p class="text-sm text-gray-500 font-light">Real Estate Investor</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-gray-50 dark:bg-gray-900 transition-theme relative overflow-hidden">
+    <div class="max-w-[1200px] mx-auto px-6 relative z-10">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-white dark:bg-black border border-lavender/30 text-xs font-semibold mb-6 text-lavender">Seamless Integration</div>
+          <h2 class="text-4xl md:text-5xl font-serif font-bold mb-6">An extension of your current stack.</h2>
+          <p class="text-gray-600 dark:text-gray-400 font-light text-lg mb-8 leading-relaxed">
+            No new software to learn. No complex portals. We plug directly into the tools you already use daily, operating transparently in the background.
+          </p>
+          
+          <div class="grid grid-cols-2 gap-4">
+            <div class="p-4 bg-white dark:bg-black rounded-xl border border-gray-100 dark:border-gray-800 flex items-center gap-3 shadow-sm hover:border-lavender transition-colors">
+              <i class="fa-brands fa-slack text-2xl text-purple-600"></i>
+              <span class="font-medium text-sm">Slack</span>
+            </div>
+            <div class="p-4 bg-white dark:bg-black rounded-xl border border-gray-100 dark:border-gray-800 flex items-center gap-3 shadow-sm hover:border-lavender transition-colors">
+              <i class="fa-brands fa-google text-2xl text-red-500"></i>
+              <span class="font-medium text-sm">Workspace</span>
+            </div>
+            <div class="p-4 bg-white dark:bg-black rounded-xl border border-gray-100 dark:border-gray-800 flex items-center gap-3 shadow-sm hover:border-lavender transition-colors">
+              <i class="fa-solid fa-note-sticky text-2xl text-yellow-500"></i>
+              <span class="font-medium text-sm">Notion</span>
+            </div>
+            <div class="p-4 bg-white dark:bg-black rounded-xl border border-gray-100 dark:border-gray-800 flex items-center gap-3 shadow-sm hover:border-lavender transition-colors">
+              <i class="fa-solid fa-list-check text-2xl text-blue-500"></i>
+              <span class="font-medium text-sm">Asana</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="relative group">
+           <div class="absolute inset-0 bg-lavender/10 rounded-[2rem] transform translate-x-4 translate-y-4 transition-transform group-hover:translate-x-6 group-hover:translate-y-6"></div>
+           <img src="images\premium_workspace.png" alt="Premium Workspace" class="relative z-10 rounded-[2rem] w-full h-[450px] object-cover shadow-xl border border-white/10">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 px-6">
+    <div class="max-w-[1200px] mx-auto rounded-[2rem] bg-black text-white text-center py-20 px-6 relative overflow-hidden shadow-2xl">
+      <div class="absolute inset-0 bg-gradient-to-br from-lavender/30 to-transparent opacity-50 mix-blend-overlay pointer-events-none"></div>
+      
+      <div class="relative z-10 max-w-2xl mx-auto">
+        <h2 class="text-4xl md:text-5xl font-serif font-bold mb-6">Stop drowning in the details.</h2>
+        <p class="text-gray-300 font-light text-lg mb-10">Take the first step towards radical productivity. Let's design a custom support plan for your unique workflow.</p>
+        <a href="contact.html" class="inline-flex px-10 py-4 rounded-full bg-lavender text-white font-bold hover:bg-white hover:text-black transition-colors duration-300 shadow-lg shadow-lavender/20">
+          Secure Your Spot for Next Month
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="py-12 border-y border-gray-100 dark:border-gray-900 transition-theme">
+    <div class="max-w-[1200px] mx-auto px-6 text-center">
+      <p class="text-xs font-semibold tracking-widest uppercase text-gray-400 mb-8">Trusted by executives from</p>
+      <div class="flex flex-wrap justify-center gap-10 md:gap-20 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
+        <i class="fa-brands fa-airbnb text-4xl"></i>
+        <i class="fa-brands fa-slack text-4xl"></i>
+        <i class="fa-brands fa-spotify text-4xl"></i>
+        <i class="fa-brands fa-squarespace text-4xl"></i>
+      </div>
+    </div>
+  </section>
+  <div id="footer"></div>
+  <script src="navbar.js"></script>
+  <script src="footer.js"></script>
+
+  </body>
+</html>

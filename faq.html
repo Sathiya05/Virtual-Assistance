@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VirtuAssist | Executive FAQ & Knowledge Base</title>
+
+  <script src="tailwind.js"></script>
+            <link rel="icon" href="images\logo.jpeg">
+
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            lavender: '#A78BFA',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .transition-theme {
+      transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease;
+    }
+    /* Smooth scrolling for anchor links */
+    html {
+      scroll-behavior: smooth;
+    }
+    /* Hide scrollbar for the sticky navigation */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+
+<body class="bg-white dark:bg-black text-black dark:text-white font-sans transition-theme overflow-x-hidden">
+
+  <div id="navbar"></div>
+
+  <section class="relative pt-40 pb-20 lg:pt-48 lg:pb-32 flex items-center justify-center overflow-hidden transition-theme min-h-[60vh]">
+    
+    <!-- Premium Gradient Background -->
+    <div class="absolute inset-0 z-0 overflow-hidden">
+      <!-- Base Lavender Gradient -->
+      <div class="absolute inset-0 bg-gradient-to-b from-lavender/20 via-white to-gray-50 dark:from-lavender/10 dark:via-black dark:to-gray-900"></div>
+      
+      <!-- Glowing Orbs -->
+      <div class="absolute -top-[20%] -left-[10%] w-[70%] h-[70%] rounded-full bg-lavender/40 dark:bg-lavender/20 blur-[120px] mix-blend-multiply dark:mix-blend-screen pointer-events-none"></div>
+      <div class="absolute -bottom-[20%] -right-[10%] w-[60%] h-[60%] rounded-full bg-blue-300/20 dark:bg-blue-900/30 blur-[120px] mix-blend-multiply dark:mix-blend-screen pointer-events-none"></div>
+      
+      <!-- Image Overlay -->
+      <img src="images/img1.avif" alt="Abstract Background" class="absolute inset-0 w-full h-full object-cover opacity-40 dark:opacity-20 mix-blend-overlay">
+      
+      <!-- Seamless Bottom Fade -->
+      <div class="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-white dark:from-black to-transparent"></div>
+    </div>
+    
+    <!-- Text Content -->
+    <div class="max-w-[1000px] mx-auto px-6 w-full relative z-10 text-center">
+      <div class="w-16 h-16 mx-auto bg-lavender/10 rounded-full flex items-center justify-center text-lavender text-2xl mb-6 shadow-inner border border-lavender/20">
+        <i class="fa-solid fa-book-open"></i>
+      </div>
+      <p class="text-xs font-bold tracking-[0.2em] uppercase text-lavender mb-4">Knowledge Base</p>
+      <h1 class="text-4xl md:text-6xl font-serif font-bold leading-tight mb-6">
+        Executive Inquiries & <br>
+        <span class="italic font-light text-lavender">Partnership Details.</span>
+      </h1>
+      <p class="text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto font-light leading-relaxed mb-10">
+        Clarity is the foundation of a successful partnership. Below you will find comprehensive answers regarding our security protocols, onboarding, and service scope.
+      </p>
+      
+      <!-- Filter Tags -->
+      <div class="flex flex-wrap items-center justify-center gap-3">
+        <a href="#onboarding" class="px-6 py-3 rounded-full border border-lavender/30 bg-white/50 dark:bg-black/50 text-sm font-semibold text-gray-800 dark:text-gray-200 hover:bg-lavender hover:text-white dark:hover:bg-lavender transition-all shadow-sm">Onboarding</a>
+        <a href="#security" class="px-6 py-3 rounded-full border border-lavender/30 bg-white/50 dark:bg-black/50 text-sm font-semibold text-gray-800 dark:text-gray-200 hover:bg-lavender hover:text-white dark:hover:bg-lavender transition-all shadow-sm">Security</a>
+        <a href="#financials" class="px-6 py-3 rounded-full border border-lavender/30 bg-white/50 dark:bg-black/50 text-sm font-semibold text-gray-800 dark:text-gray-200 hover:bg-lavender hover:text-white dark:hover:bg-lavender transition-all shadow-sm">Financials</a>
+        <a href="#scope" class="px-6 py-3 rounded-full border border-lavender/30 bg-white/50 dark:bg-black/50 text-sm font-semibold text-gray-800 dark:text-gray-200 hover:bg-lavender hover:text-white dark:hover:bg-lavender transition-all shadow-sm">Scope & Limits</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="max-w-[900px] mx-auto px-6 py-24">
+    
+    <section id="onboarding" class="mb-24 lg:mb-32 scroll-mt-32">
+      <div class="flex flex-col items-center text-center mb-10">
+        <div class="w-12 h-12 bg-lavender/10 rounded-full flex items-center justify-center text-lavender mb-6 text-xl"><i class="fa-solid fa-rocket"></i></div>
+        <h2 class="text-3xl font-serif font-bold mb-4">Integration & Onboarding</h2>
+        <p class="text-gray-600 dark:text-gray-400 font-light text-sm leading-relaxed max-w-md">
+          How we transition your chaotic workflows into a streamlined operational engine in under 72 hours.
+        </p>
+      </div>
+      
+      <div class="flex flex-col gap-4">
+        <div class="faq-card bg-white dark:bg-black border border-gray-200 dark:border-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all">
+          <button class="faq-trigger w-full px-8 py-6 flex items-center justify-between text-left focus:outline-none group">
+            <span class="font-bold font-serif text-lg group-hover:text-lavender transition-colors">How quickly can support begin after I sign up?</span>
+            <div class="w-8 h-8 rounded-full bg-gray-50 dark:bg-gray-900 flex items-center justify-center shrink-0 group-hover:bg-lavender group-hover:text-white transition-colors">
+              <i class="fa-solid fa-plus faq-icon text-sm transition-transform duration-300"></i>
+            </div>
+          </button>
+          <div class="faq-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out px-8">
+            <p class="pb-8 text-gray-600 dark:text-gray-400 font-light text-sm leading-relaxed border-t border-gray-100 dark:border-gray-800 pt-6">
+              Our standard integration timeline is 72 business hours. Once your agreement is signed and your retainer is paid, we initiate our secure handover protocol. You will immediately get access to your Client Portal and we will schedule your 60-minute Discovery Dive.
+            </p>
+          </div>
+        </div>
+        <div class="faq-card bg-white dark:bg-black border border-gray-200 dark:border-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all">
+          <button class="faq-trigger w-full px-8 py-6 flex items-center justify-between text-left focus:outline-none group">
+            <span class="font-bold font-serif text-lg group-hover:text-lavender transition-colors">Do I need to train my VirtuAssist partner?</span>
+            <div class="w-8 h-8 rounded-full bg-gray-50 dark:bg-gray-900 flex items-center justify-center shrink-0 group-hover:bg-lavender group-hover:text-white transition-colors">
+              <i class="fa-solid fa-plus faq-icon text-sm transition-transform duration-300"></i>
+            </div>
+          </button>
+          <div class="faq-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out px-8">
+            <p class="pb-8 text-gray-600 dark:text-gray-400 font-light text-sm leading-relaxed border-t border-gray-100 dark:border-gray-800 pt-6">
+              No. Our partners are top-tier professionals. We adapt to *your* ecosystem. While we will need your initial guidance on preferences (e.g., how you prefer emails drafted, which airlines you fly), you do not need to teach us how to use Slack, Asana, Notion, or Google Workspace.
+            </p>
+          </div>
+        </div>
+        <div class="faq-card bg-white dark:bg-black border border-gray-200 dark:border-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all">
+          <button class="faq-trigger w-full px-8 py-6 flex items-center justify-between text-left focus:outline-none group">
+            <span class="font-bold font-serif text-lg group-hover:text-lavender transition-colors">What happens if my assigned partner is sick or takes PTO?</span>
+            <div class="w-8 h-8 rounded-full bg-gray-50 dark:bg-gray-900 flex items-center justify-center shrink-0 group-hover:bg-lavender group-hover:text-white transition-colors">
+              <i class="fa-solid fa-plus faq-icon text-sm transition-transform duration-300"></i>
+            </div>
+          </button>
+          <div class="faq-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out px-8">
+            <p class="pb-8 text-gray-600 dark:text-gray-400 font-light text-sm leading-relaxed border-t border-gray-100 dark:border-gray-800 pt-6">
+              Because we meticulously document your Standard Operating Procedures (SOPs) during onboarding, your operations never halt. If your primary partner is unavailable, a fully-briefed, senior-level backup partner will step in seamlessly, ensuring zero disruption to your day.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="security" class="mb-24 lg:mb-32 scroll-mt-32">
+      <div class="flex flex-col items-center text-center mb-10">
+        <div class="w-12 h-12 bg-lavender/10 rounded-full flex items-center justify-center text-lavender mb-6 text-xl"><i class="fa-solid fa-shield-halved"></i></div>
+        <h2 class="text-3xl font-serif font-bold mb-4">Security & Confidentiality</h2>
+        <p class="text-gray-600 dark:text-gray-400 font-light text-sm leading-relaxed max-w-md">
+          How we protect your sensitive data, credentials, and trade secrets.
+        </p>
+      </div>
+      
+      <div class="flex flex-col gap-4">
+        <div class="faq-card bg-white dark:bg-black border border-gray-200 dark:border-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all">
+          <button class="faq-trigger w-full px-8 py-6 flex items-center justify-between text-left focus:outline-none group">
+            <span class="font-bold font-serif text-lg group-hover:text-lavender transition-colors">How do you manage my passwords and logins?</span>
+            <div class="w-8 h-8 rounded-full bg-gray-50 dark:bg-gray-900 flex items-center justify-center shrink-0 group-hover:bg-lavender group-hover:text-white transition-colors">
+              <i class="fa-solid fa-plus faq-icon text-sm transition-transform duration-300"></i>
+            </div>
+          </button>
+          <div class="faq-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out px-8">
+            <p class="pb-8 text-gray-600 dark:text-gray-400 font-light text-sm leading-relaxed border-t border-gray-100 dark:border-gray-800 pt-6">
+              We operate strictly on a "zero-knowledge" basis. We use 1Password (or your preferred enterprise password manager) to share access. You never send us raw passwords. You grant delegated access via the vault, meaning you can revoke our access with a single click at any time.
+            </p>
+          </div>
+        </div>
+        <div class="faq-card bg-white dark:bg-black border border-gray-200 dark:border-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all">
+          <button class="faq-trigger w-full px-8 py-6 flex items-center justify-between text-left focus:outline-none group">
+            <span class="font-bold font-serif text-lg group-hover:text-lavender transition-colors">Will you sign my company's NDA?</span>
+            <div class="w-8 h-8 rounded-full bg-gray-50 dark:bg-gray-900 flex items-center justify-center shrink-0 group-hover:bg-lavender group-hover:text-white transition-colors">
+              <i class="fa-solid fa-plus faq-icon text-sm transition-transform duration-300"></i>
+            </div>
+          </button>
+          <div class="faq-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out px-8">
+            <p class="pb-8 text-gray-600 dark:text-gray-400 font-light text-sm leading-relaxed border-t border-gray-100 dark:border-gray-800 pt-6">
+              Absolutely. A strict mutual Non-Disclosure Agreement is embedded into our master service contract. Furthermore, all of our internal partners have signed rigorous confidentiality agreements prior to employment. If your legal team requires a custom NDA, we are happy to review and sign it.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="financials" class="mb-24 lg:mb-32 scroll-mt-32">
+      <div class="flex flex-col items-center text-center mb-10">
+        <div class="w-12 h-12 bg-lavender/10 rounded-full flex items-center justify-center text-lavender mb-6 text-xl"><i class="fa-solid fa-credit-card"></i></div>
+        <h2 class="text-3xl font-serif font-bold mb-4">Retainers & Financials</h2>
+        <p class="text-gray-600 dark:text-gray-400 font-light text-sm leading-relaxed max-w-md">
+          Transparent pricing, rollover policies, and billing mechanics.
+        </p>
+      </div>
+      
+      <div class="flex flex-col gap-4">
+        <div class="faq-card bg-white dark:bg-black border border-gray-200 dark:border-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all">
+          <button class="faq-trigger w-full px-8 py-6 flex items-center justify-between text-left focus:outline-none group">
+            <span class="font-bold font-serif text-lg group-hover:text-lavender transition-colors">Do you charge by the hour or by the task?</span>
+            <div class="w-8 h-8 rounded-full bg-gray-50 dark:bg-gray-900 flex items-center justify-center shrink-0 group-hover:bg-lavender group-hover:text-white transition-colors">
+              <i class="fa-solid fa-plus faq-icon text-sm transition-transform duration-300"></i>
+            </div>
+          </button>
+          <div class="faq-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out px-8">
+            <p class="pb-8 text-gray-600 dark:text-gray-400 font-light text-sm leading-relaxed border-t border-gray-100 dark:border-gray-800 pt-6">
+              Neither. We operate exclusively on flat-rate monthly retainers. This ensures predictable billing for you and guarantees your partner's availability. We do not believe in penalizing you (by charging more) when we work efficiently, nor do we want you worrying about a ticking clock.
+            </p>
+          </div>
+        </div>
+        <div class="faq-card bg-white dark:bg-black border border-gray-200 dark:border-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all">
+          <button class="faq-trigger w-full px-8 py-6 flex items-center justify-between text-left focus:outline-none group">
+            <span class="font-bold font-serif text-lg group-hover:text-lavender transition-colors">Do unused retainer hours roll over to the next month?</span>
+            <div class="w-8 h-8 rounded-full bg-gray-50 dark:bg-gray-900 flex items-center justify-center shrink-0 group-hover:bg-lavender group-hover:text-white transition-colors">
+              <i class="fa-solid fa-plus faq-icon text-sm transition-transform duration-300"></i>
+            </div>
+          </button>
+          <div class="faq-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out px-8">
+            <p class="pb-8 text-gray-600 dark:text-gray-400 font-light text-sm leading-relaxed border-t border-gray-100 dark:border-gray-800 pt-6">
+              No, hours do not roll over. Your monthly retainer reserves your partner's guaranteed capacity for that specific month. To ensure our boutique level of service, we cap the number of clients each partner takes, making rollover hours impossible to schedule accurately.
+            </p>
+          </div>
+        </div>
+        <div class="faq-card bg-white dark:bg-black border border-gray-200 dark:border-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all">
+          <button class="faq-trigger w-full px-8 py-6 flex items-center justify-between text-left focus:outline-none group">
+            <span class="font-bold font-serif text-lg group-hover:text-lavender transition-colors">Am I locked into a long-term contract?</span>
+            <div class="w-8 h-8 rounded-full bg-gray-50 dark:bg-gray-900 flex items-center justify-center shrink-0 group-hover:bg-lavender group-hover:text-white transition-colors">
+              <i class="fa-solid fa-plus faq-icon text-sm transition-transform duration-300"></i>
+            </div>
+          </button>
+          <div class="faq-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out px-8">
+            <p class="pb-8 text-gray-600 dark:text-gray-400 font-light text-sm leading-relaxed border-t border-gray-100 dark:border-gray-800 pt-6">
+              We require a 3-month initial commitment because it takes time to fully integrate into your life and begin yielding maximum ROI. After the first 90 days, your agreement shifts to a flexible month-to-month retainer with a 30-day cancellation notice.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="scope" class="scroll-mt-32">
+      <div class="flex flex-col items-center text-center mb-10">
+        <div class="w-12 h-12 bg-lavender/10 rounded-full flex items-center justify-center text-lavender mb-6 text-xl"><i class="fa-solid fa-ban"></i></div>
+        <h2 class="text-3xl font-serif font-bold mb-4">Scope & Boundaries</h2>
+        <p class="text-gray-600 dark:text-gray-400 font-light text-sm leading-relaxed max-w-md">
+          A premium service is defined by what it *doesn't* do.
+        </p>
+      </div>
+      
+      <div class="flex flex-col gap-4">
+        <div class="faq-card bg-white dark:bg-black border border-gray-200 dark:border-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all">
+          <button class="faq-trigger w-full px-8 py-6 flex items-center justify-between text-left focus:outline-none group">
+            <span class="font-bold font-serif text-lg group-hover:text-lavender transition-colors">Will my VirtuAssist partner make cold calls for sales?</span>
+            <div class="w-8 h-8 rounded-full bg-gray-50 dark:bg-gray-900 flex items-center justify-center shrink-0 group-hover:bg-lavender group-hover:text-white transition-colors">
+              <i class="fa-solid fa-plus faq-icon text-sm transition-transform duration-300"></i>
+            </div>
+          </button>
+          <div class="faq-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out px-8">
+            <p class="pb-8 text-gray-600 dark:text-gray-400 font-light text-sm leading-relaxed border-t border-gray-100 dark:border-gray-800 pt-6">
+              No. We are operational and administrative experts. We do not provide outbound sales, telemarketing, cold calling, or direct lead generation services. We *will*, however, meticulously manage your CRM and handle warm client onboarding communications.
+            </p>
+          </div>
+        </div>
+        <div class="faq-card bg-white dark:bg-black border border-gray-200 dark:border-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all">
+          <button class="faq-trigger w-full px-8 py-6 flex items-center justify-between text-left focus:outline-none group">
+            <span class="font-bold font-serif text-lg group-hover:text-lavender transition-colors">Do you offer specialized legal or accounting services?</span>
+            <div class="w-8 h-8 rounded-full bg-gray-50 dark:bg-gray-900 flex items-center justify-center shrink-0 group-hover:bg-lavender group-hover:text-white transition-colors">
+              <i class="fa-solid fa-plus faq-icon text-sm transition-transform duration-300"></i>
+            </div>
+          </button>
+          <div class="faq-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out px-8">
+            <p class="pb-8 text-gray-600 dark:text-gray-400 font-light text-sm leading-relaxed border-t border-gray-100 dark:border-gray-800 pt-6">
+              While we perform "light bookkeeping" (managing receipts, categorizing expenses, generating invoices), we are not CPAs or attorneys. We cannot file taxes, provide financial audits, or draft legally binding custom contracts from scratch. We act as the liaison *between* you and your specialized legal/financial teams.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <section class="py-24 bg-black text-white transition-theme border-y border-gray-900 relative overflow-hidden">
+    <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-lavender/10 rounded-full blur-[150px] pointer-events-none"></div>
+
+    <div class="max-w-[1000px] mx-auto px-6 relative z-10">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-5xl font-serif font-bold mb-4">The VirtuAssist Difference</h2>
+        <p class="text-gray-400 font-light text-lg">Why high-velocity executives choose us over standard VA platforms.</p>
+      </div>
+
+      <!-- Desktop Table Layout -->
+      <div class="hidden lg:block overflow-x-auto">
+        <table class="w-full text-left border-collapse">
+          <thead>
+            <tr class="border-b-2 border-gray-800">
+              <th class="p-4 text-gray-500 font-normal uppercase tracking-widest text-xs w-1/3">Feature</th>
+              <th class="p-4 font-bold text-lg text-white w-1/3">VirtuAssist Partner</th>
+              <th class="p-4 text-gray-500 font-normal text-sm w-1/3">Standard VA Agency</th>
+            </tr>
+          </thead>
+          <tbody class="text-sm font-light">
+            <tr class="border-b border-gray-800/50 hover:bg-gray-900/50 transition-colors">
+              <td class="p-4 font-bold text-gray-300">Operating Style</td>
+              <td class="p-4 text-lavender font-medium"><i class="fa-solid fa-check mr-2"></i> Proactive & Autonomous</td>
+              <td class="p-4 text-gray-500">Requires Constant Delegation</td>
+            </tr>
+            <tr class="border-b border-gray-800/50 hover:bg-gray-900/50 transition-colors">
+              <td class="p-4 font-bold text-gray-300">Talent Pool</td>
+              <td class="p-4 text-lavender font-medium"><i class="fa-solid fa-check mr-2"></i> Top 1% Corporate EAs</td>
+              <td class="p-4 text-gray-500">Entry-level Freelancers</td>
+            </tr>
+            <tr class="border-b border-gray-800/50 hover:bg-gray-900/50 transition-colors">
+              <td class="p-4 font-bold text-gray-300">Onboarding</td>
+              <td class="p-4 text-lavender font-medium"><i class="fa-solid fa-check mr-2"></i> 72-Hour Guided Audit</td>
+              <td class="p-4 text-gray-500">You Train Them From Scratch</td>
+            </tr>
+            <tr class="border-b border-gray-800/50 hover:bg-gray-900/50 transition-colors">
+              <td class="p-4 font-bold text-gray-300">Security</td>
+              <td class="p-4 text-lavender font-medium"><i class="fa-solid fa-check mr-2"></i> 1Password + Strict NDAs</td>
+              <td class="p-4 text-gray-500">Emailing Raw Passwords</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Mobile Card Layout -->
+      <div class="lg:hidden grid grid-cols-1 md:grid-cols-2 gap-4">
+        
+        <div class="bg-gray-900/30 rounded-2xl p-5 border border-gray-800 shadow-sm">
+          <p class="text-gray-400 font-bold uppercase tracking-widest text-[10px] mb-4 pb-3 border-b border-gray-800">Operating Style</p>
+          <div class="flex flex-col gap-4">
+            <div>
+              <p class="text-[11px] font-bold tracking-wider uppercase text-gray-500 mb-1">VirtuAssist Partner</p>
+              <p class="text-lavender font-medium text-sm"><i class="fa-solid fa-check mr-2"></i> Proactive & Autonomous</p>
+            </div>
+            <div>
+              <p class="text-[11px] font-bold tracking-wider uppercase text-gray-500 mb-1">Standard VA Agency</p>
+              <p class="text-gray-400 text-sm"><i class="fa-solid fa-xmark text-gray-600 mr-2"></i> Requires Constant Delegation</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gray-900/30 rounded-2xl p-5 border border-gray-800 shadow-sm">
+          <p class="text-gray-400 font-bold uppercase tracking-widest text-[10px] mb-4 pb-3 border-b border-gray-800">Talent Pool</p>
+          <div class="flex flex-col gap-4">
+            <div>
+              <p class="text-[11px] font-bold tracking-wider uppercase text-gray-500 mb-1">VirtuAssist Partner</p>
+              <p class="text-lavender font-medium text-sm"><i class="fa-solid fa-check mr-2"></i> Top 1% Corporate EAs</p>
+            </div>
+            <div>
+              <p class="text-[11px] font-bold tracking-wider uppercase text-gray-500 mb-1">Standard VA Agency</p>
+              <p class="text-gray-400 text-sm"><i class="fa-solid fa-xmark text-gray-600 mr-2"></i> Entry-level Freelancers</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gray-900/30 rounded-2xl p-5 border border-gray-800 shadow-sm">
+          <p class="text-gray-400 font-bold uppercase tracking-widest text-[10px] mb-4 pb-3 border-b border-gray-800">Onboarding</p>
+          <div class="flex flex-col gap-4">
+            <div>
+              <p class="text-[11px] font-bold tracking-wider uppercase text-gray-500 mb-1">VirtuAssist Partner</p>
+              <p class="text-lavender font-medium text-sm"><i class="fa-solid fa-check mr-2"></i> 72-Hour Guided Audit</p>
+            </div>
+            <div>
+              <p class="text-[11px] font-bold tracking-wider uppercase text-gray-500 mb-1">Standard VA Agency</p>
+              <p class="text-gray-400 text-sm"><i class="fa-solid fa-xmark text-gray-600 mr-2"></i> You Train Them From Scratch</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gray-900/30 rounded-2xl p-5 border border-gray-800 shadow-sm">
+          <p class="text-gray-400 font-bold uppercase tracking-widest text-[10px] mb-4 pb-3 border-b border-gray-800">Security</p>
+          <div class="flex flex-col gap-4">
+            <div>
+              <p class="text-[11px] font-bold tracking-wider uppercase text-gray-500 mb-1">VirtuAssist Partner</p>
+              <p class="text-lavender font-medium text-sm"><i class="fa-solid fa-check mr-2"></i> 1Password + Strict NDAs</p>
+            </div>
+            <div>
+              <p class="text-[11px] font-bold tracking-wider uppercase text-gray-500 mb-1">Standard VA Agency</p>
+              <p class="text-gray-400 text-sm"><i class="fa-solid fa-xmark text-gray-600 mr-2"></i> Emailing Raw Passwords</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-gray-50 dark:bg-gray-900/30 transition-theme">
+    <div class="max-w-[1200px] mx-auto px-6">
+      <div class="bg-white dark:bg-black border border-gray-200 dark:border-gray-800 rounded-[2.5rem] p-10 lg:p-16 shadow-xl flex flex-col lg:flex-row items-center justify-between gap-10 text-center sm:text-left">
+        
+        <div class="flex flex-col sm:flex-row items-center gap-6 sm:gap-8">
+          <div class="w-16 h-16 sm:w-20 sm:h-20 bg-lavender/10 rounded-full flex items-center justify-center text-lavender text-2xl sm:text-3xl shrink-0">
+            <i class="fa-solid fa-headset"></i>
+          </div>
+          <div>
+            <h3 class="text-3xl font-serif font-bold mb-2">Still have questions?</h3>
+            <p class="text-gray-600 dark:text-gray-400 font-light text-lg">Our partnership directors are available for a private consultation.</p>
+          </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row justify-center gap-4 shrink-0 w-full lg:w-auto mt-4 lg:mt-0">
+          <a href="contact.html" class="px-8 py-4 rounded-full bg-black dark:bg-white text-white dark:text-black font-bold text-center hover:bg-lavender dark:hover:bg-lavender dark:hover:text-white transition-all shadow-md">
+            Book Discovery Call
+          </a>
+          <a href="mailto:hello@virtuassist.com" class="px-8 py-4 rounded-full border border-gray-300 dark:border-gray-700 font-bold text-center hover:border-lavender hover:text-lavender transition-all">
+            Email Director
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 transition-theme">
+    <div class="max-w-[1200px] mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left border-y border-gray-100 dark:border-gray-900 py-10">
+      <div>
+        <h3 class="text-2xl font-serif font-bold mb-2">Already an active partner?</h3>
+        <p class="text-gray-600 dark:text-gray-400 font-light text-sm">Log in to view operational updates, submit a la carte requests, or manage billing.</p>
+      </div>
+      <a href="login.html" class="shrink-0 px-8 py-4 rounded-full bg-lavender/10 text-lavender font-bold text-sm hover:bg-lavender hover:text-white transition-all flex items-center justify-center gap-2">
+        Access Secure Portal <i class="fa-solid fa-arrow-right-to-bracket"></i>
+      </a>
+    </div>
+  </section>
+
+  <div id="footer"></div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const faqCards = document.querySelectorAll('.faq-card');
+
+      faqCards.forEach(card => {
+        const trigger = card.querySelector('.faq-trigger');
+        const content = card.querySelector('.faq-content');
+        const icon = card.querySelector('.faq-icon');
+
+        trigger.addEventListener('click', () => {
+          // Close all other open accordions within the same section
+          const parentSection = card.closest('section');
+          const siblingContents = parentSection.querySelectorAll('.faq-content');
+          const siblingIcons = parentSection.querySelectorAll('.faq-icon');
+          
+          siblingContents.forEach((sibContent, index) => {
+            if (sibContent !== content && sibContent.style.maxHeight) {
+              sibContent.style.maxHeight = null;
+              siblingIcons[index].style.transform = 'rotate(0deg)';
+              sibContent.closest('.faq-card').classList.remove('border-lavender');
+            }
+          });
+
+          // Toggle current accordion
+          if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+            icon.style.transform = 'rotate(0deg)';
+            card.classList.remove('border-lavender');
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+            icon.style.transform = 'rotate(45deg)';
+            card.classList.add('border-lavender');
+          }
+        });
+      });
+    });
+  </script>
+
+  <script src="navbar.js"></script>
+  <script src="footer.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VirtuAssist | 404 - Asset Not Found</title>
+
+  <script src="tailwind.js"></script>
+            <link rel="icon" href="images\logo.jpeg">
+
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            lavender: '#A78BFA',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+          },
+          animation: {
+            'radar-spin': 'radar-spin 4s linear infinite',
+            'ping-slow': 'ping 3s cubic-bezier(0, 0, 0.2, 1) infinite',
+          },
+          keyframes: {
+            'radar-spin': {
+              '0%': { transform: 'rotate(0deg)' },
+              '100%': { transform: 'rotate(360deg)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .transition-theme {
+      transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease;
+    }
+    
+    /* Radar Sweep Gradient */
+    .radar-sweep {
+      background: conic-gradient(from 90deg at 50% 50%, transparent 0%, rgba(167, 139, 250, 0.1) 80%, rgba(167, 139, 250, 0.5) 100%);
+      border-radius: 50%;
+    }
+  </style>
+
+  <script>
+    const currentTheme = localStorage.getItem("virtuassist-theme");
+    if (currentTheme === "dark" || (!currentTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  </script>
+</head>
+
+<body class="bg-white dark:bg-black text-black dark:text-white font-sans transition-theme overflow-x-hidden flex flex-col min-h-screen">
+
+
+  <main class="flex-1 flex flex-col items-center justify-center relative px-6 pt-32 pb-20 overflow-hidden min-h-[85vh]">
+    
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] pointer-events-none z-0 opacity-40 dark:opacity-30 flex items-center justify-center">
+      <div class="absolute w-[200px] h-[200px] border border-lavender/30 rounded-full"></div>
+      <div class="absolute w-[400px] h-[400px] border border-lavender/20 rounded-full"></div>
+      <div class="absolute w-[600px] h-[600px] border border-lavender/10 rounded-full"></div>
+      <div class="absolute w-[800px] h-[800px] border border-lavender/5 rounded-full"></div>
+      <div class="absolute w-[800px] h-[800px] radar-sweep animate-radar-spin mix-blend-multiply dark:mix-blend-screen"></div>
+    </div>
+
+    <div class="relative z-20 text-center md:text-center md:items-center flex flex-col items-center w-full max-w-2xl mx-auto">
+      
+      <div class="relative w-24 h-24 mb-8 flex items-center justify-center">
+        <div class="absolute inset-0 bg-lavender/20 rounded-full animate-ping-slow"></div>
+        <div class="absolute inset-0 bg-lavender/10 rounded-full animate-ping"></div>
+        <div class="relative w-16 h-16 bg-white dark:bg-black border border-lavender rounded-full flex items-center justify-center text-lavender text-2xl shadow-[0_0_20px_rgba(167,139,250,0.4)]">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+
+      <p class="text-xl font-bold tracking-[0.2em] uppercase text-lavender mb-4">Error 404</p>
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-6">Asset Misfiled.</h1>
+      
+      <p class="text-lg text-gray-600 dark:text-gray-400 font-light mb-10 leading-relaxed max-w-lg md:mx-auto">
+        We've swept the archives, but the document or page you are looking for has been moved, renamed, or permanently redacted. 
+      </p>
+
+      <form class="w-full max-w-md relative mb-12" action="index.html" onsubmit="event.preventDefault(); window.location.href='index.html';">
+        <input type="text" placeholder="Search the operational archives..." class="w-full pl-6 pr-14 py-4 rounded-full bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800 text-black dark:text-white focus:outline-none focus:border-lavender dark:focus:border-lavender transition-colors shadow-inner text-sm">
+        <button type="submit" class="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 bg-lavender text-white rounded-full flex items-center justify-center hover:bg-black dark:hover:bg-white dark:hover:text-black transition-colors shadow-md">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </form>
+      
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 w-full">
+        <a href="index.html" class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-black dark:bg-white text-white dark:text-black font-bold text-sm hover:bg-lavender dark:hover:bg-lavender dark:hover:text-white transition-all shadow-lg hover:-translate-y-1 text-center">
+          Return to Home
+        </a>
+        <a href="user.html" class="w-full sm:w-auto px-8 py-3.5 rounded-full border-2 border-gray-200 dark:border-gray-800 text-black dark:text-white font-bold text-sm hover:border-lavender hover:text-lavender dark:hover:border-lavender dark:hover:text-lavender transition-all text-center">
+          Client Portal
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+
+</body>
+</html>
