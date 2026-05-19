@@ -74,7 +74,7 @@
 
     <script>
         const currentTheme = localStorage.getItem("virtuassist-theme");
-        if (currentTheme === "dark" || (!currentTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        if (currentTheme === "dark") {
             document.documentElement.classList.add("dark");
         } else {
             document.documentElement.classList.remove("dark");

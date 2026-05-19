@@ -313,12 +313,12 @@ document.addEventListener("DOMContentLoaded", () => {
     updateIcons(isDark);
   }));
 
-  // Check saved theme preference on load
-  if (localStorage.getItem("virtuassist-theme") === "dark" || 
-     (!localStorage.getItem("virtuassist-theme") && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+  // Check saved theme preference on load (Default to Light Mode)
+  if (localStorage.getItem("virtuassist-theme") === "dark") {
     document.documentElement.classList.add("dark");
     updateIcons(true);
   } else {
+    document.documentElement.classList.remove("dark");
     updateIcons(false);
   }
 });
