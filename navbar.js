@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
     <div class="hidden xl:flex items-center gap-4 shrink-0">
       <div class="flex items-center gap-2">
         <button id="rtlToggle" class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-100 dark:bg-gray-900 text-black dark:text-white hover:bg-[#A78BFA] hover:text-white dark:hover:bg-[#A78BFA] transition-colors" title="Toggle RTL">
-          <i class="fa-solid fa-language text-sm"></i>
+          <i class="fa-solid fa-globe text-sm"></i>
         </button>
         <button id="darkToggle" class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-100 dark:bg-gray-900 text-black dark:text-white hover:bg-[#A78BFA] hover:text-white dark:hover:bg-[#A78BFA]  transition-colors" title="Toggle Theme">
           <i id="darkIcon" class="fa-solid fa-moon text-sm"></i>
@@ -135,7 +135,7 @@ document.addEventListener("DOMContentLoaded", () => {
     <div class="p-6 border-t border-gray-100 dark:border-gray-900 flex flex-col gap-4">
       <div class="flex items-center gap-2">
         <button id="mobileRtlToggle" class="flex-1 flex items-center justify-center gap-2 p-3 rounded-xl bg-gray-100 dark:bg-gray-900 text-black dark:text-white font-medium hover:bg-[#A78BFA] hover:text-white transition-colors">
-          <i class="fa-solid fa-language"></i> RTL
+          <i class="fa-solid fa-globe"></i> RTL
         </button>
         <button id="mobileDarkToggle" class="flex-1 flex items-center justify-center gap-2 p-3 rounded-xl bg-gray-100 dark:bg-gray-900 text-black dark:text-white font-medium hover:bg-[#A78BFA] hover:text-white transition-colors">
           <i id="mobileDarkIcon" class="fa-solid fa-moon"></i> Theme
