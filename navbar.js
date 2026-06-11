@@ -104,8 +104,8 @@ document.addEventListener("DOMContentLoaded", () => {
           <i id="mobileHomeIcon" class="fa-solid fa-chevron-down text-sm transition-transform duration-300"></i>
         </button>
         <div id="mobileHomeMenu" class="hidden flex-col ps-4 mt-1 border-s-2 border-[#A78BFA]/30 ms-3">
-          <a href="index.html" class="mobile-sublink block p-2 text-sm text-gray-600 dark:text-gray-400 hover:text-[#A78BFA] dark:hover:text-[#A78BFA]">Home 1</a>
-          <a href="home2.html" class="mobile-sublink block p-2 text-sm text-gray-600 dark:text-gray-400 hover:text-[#A78BFA] dark:hover:text-[#A78BFA]">Home 2</a>
+          <a href="index.html" class="mobile-sublink block p-2 text-sm text-gray-600 dark:text-gray-300 hover:text-[#A78BFA] dark:hover:text-[#A78BFA]">Home 1</a>
+          <a href="home2.html" class="mobile-sublink block p-2 text-sm text-gray-600 dark:text-gray-300 hover:text-[#A78BFA] dark:hover:text-[#A78BFA]">Home 2</a>
         </div>
       </div>
       
@@ -126,8 +126,8 @@ document.addEventListener("DOMContentLoaded", () => {
           <i id="mobileServicesIcon" class="fa-solid fa-chevron-down text-sm transition-transform duration-300"></i>
         </button>
         <div id="mobileServicesMenu" class="hidden flex-col ps-4 mt-1 border-s-2 border-[#A78BFA]/30 ms-3">
-          <a href="user.html" class="mobile-sublink block p-2 text-sm text-gray-600 dark:text-gray-400 hover:text-[#A78BFA] dark:hover:text-[#A78BFA]">User</a>
-          <a href="admin.html" class="mobile-sublink block p-2 text-sm text-gray-600 dark:text-gray-400 hover:text-[#A78BFA] dark:hover:text-[#A78BFA]">Admin</a>
+          <a href="user.html" class="mobile-sublink block p-2 text-sm text-gray-600 dark:text-gray-300 hover:text-[#A78BFA] dark:hover:text-[#A78BFA]">User</a>
+          <a href="admin.html" class="mobile-sublink block p-2 text-sm text-gray-600 dark:text-gray-300 hover:text-[#A78BFA] dark:hover:text-[#A78BFA]">Admin</a>
         </div>
       </div>
       </div>

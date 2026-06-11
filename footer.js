@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <span class="text-[#A78BFA] italic font-light">Join the executive briefing.</span>
         </h3>
         
-        <p class="text-gray-600 dark:text-gray-400 font-light text-sm md:text-base mb-8 max-w-md leading-relaxed">
+        <p class="text-gray-600 dark:text-gray-300 font-light text-sm md:text-base mb-8 max-w-md leading-relaxed">
           Receive curated insights on delegation, executive productivity, and workflow automation directly to your inbox every fortnight.
         </p>
 
@@ -50,22 +50,22 @@ document.addEventListener("DOMContentLoaded", () => {
         <div>
           <h4 class="text-xs font-bold uppercase tracking-widest text-black dark:text-white mb-6">Expertise</h4>
           <ul class="space-y-4 text-sm font-light">
-            <li><a href="admin-support.html" class="va-footer-link flex items-center gap-2 text-gray-600 dark:text-gray-400">Admin Support</a></li>
-            <li><a href="inbox-management.html" class="va-footer-link flex items-center gap-2 text-gray-600 dark:text-gray-400">Inbox & Calendar</a></li>
-            <li><a href="data-entry.html" class="va-footer-link flex items-center gap-2 text-gray-600 dark:text-gray-400">Data & Research</a></li>
-            <li><a href="travel.html" class="va-footer-link flex items-center gap-2 text-gray-600 dark:text-gray-400">Travel Planning</a></li>
-            <li><a href="personal-errands.html" class="va-footer-link flex items-center gap-2 text-gray-600 dark:text-gray-400">Lifestyle Concierge</a></li>
+            <li><a href="admin-support.html" class="va-footer-link flex items-center gap-2 text-gray-600 dark:text-gray-300">Admin Support</a></li>
+            <li><a href="inbox-management.html" class="va-footer-link flex items-center gap-2 text-gray-600 dark:text-gray-300">Inbox & Calendar</a></li>
+            <li><a href="data-entry.html" class="va-footer-link flex items-center gap-2 text-gray-600 dark:text-gray-300">Data & Research</a></li>
+            <li><a href="travel.html" class="va-footer-link flex items-center gap-2 text-gray-600 dark:text-gray-300">Travel Planning</a></li>
+            <li><a href="personal-errands.html" class="va-footer-link flex items-center gap-2 text-gray-600 dark:text-gray-300">Lifestyle Concierge</a></li>
           </ul>
         </div>
 
         <div>
           <h4 class="text-xs font-bold uppercase tracking-widest text-black dark:text-white mb-6">Company</h4>
           <ul class="space-y-4 text-sm font-light">
-            <li><a href="about.html" class="va-footer-link flex items-center gap-2 text-gray-600 dark:text-gray-400">About Me</a></li>
-            <li><a href="pricing.html" class="va-footer-link flex items-center gap-2 text-gray-600 dark:text-gray-400">Pricing & Packages</a></li>
-            <li><a href="faq.html" class="va-footer-link flex items-center gap-2 text-gray-600 dark:text-gray-400">Client FAQ</a></li>
-            <li><a href="portal.html" class="va-footer-link flex items-center gap-2 text-gray-600 dark:text-gray-400">Client Portal</a></li>
-            <li><a href="contact.html" class="va-footer-link flex items-center gap-2 text-gray-600 dark:text-gray-400">Contact</a></li>
+            <li><a href="about.html" class="va-footer-link flex items-center gap-2 text-gray-600 dark:text-gray-300">About Me</a></li>
+            <li><a href="pricing.html" class="va-footer-link flex items-center gap-2 text-gray-600 dark:text-gray-300">Pricing & Packages</a></li>
+            <li><a href="faq.html" class="va-footer-link flex items-center gap-2 text-gray-600 dark:text-gray-300">Client FAQ</a></li>
+            <li><a href="portal.html" class="va-footer-link flex items-center gap-2 text-gray-600 dark:text-gray-300">Client Portal</a></li>
+            <li><a href="contact.html" class="va-footer-link flex items-center gap-2 text-gray-600 dark:text-gray-300">Contact</a></li>
           </ul>
         </div>
 
